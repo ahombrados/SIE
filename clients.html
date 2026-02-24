@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUES - Ecosistema de Clientes</title>
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #ffffff; color: #334155;">
+
+    <header>
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="RUES Logo" class="logo">
+        </div>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="tracking.html">Seguimiento</a></li>
+                <li><a href="clients.html" class="active">Clientes</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section style="padding: 5rem 1.5rem; background: linear-gradient(to bottom, #f8fafc, #ffffff); text-align: center;">
+            <div style="max-width: 850px; margin: 0 auto;">
+                <span style="color: #0066cc; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.8rem;">Confianza y Resultados</span>
+                <h1 style="font-family: 'Roboto Slab', serif; font-size: 2.2rem; color: #003366; margin: 1rem 0;">Sectores que impulsamos</h1>
+                <p style="font-size: 1.1rem; line-height: 1.7; color: #64748b;">Acompañamos a empresas de diversos sectores en su expansión logística, garantizando trazabilidad y seguridad en cada eslabón de la cadena.</p>
+            </div>
+        </section>
+
+        <section style="max-width: 1100px; margin: 0 auto 6rem; padding: 0 1.5rem;">
+            <div class="sectors-grid">
+                <div class="sector-card">
+                    <div class="sector-icon">🛒</div>
+                    <h3>E-commerce Global</h3>
+                    <p>Optimizamos la logística de última milla para tiendas online que buscan rapidez y una experiencia de usuario impecable.</p>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-icon">⚙️</div>
+                    <h3>Servicios Especializados</h3>
+                    <p>Gestión de proyectos logísticos complejos que requieren manipulación técnica, control de temperatura o entregas bajo demanda.</p>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-icon">🏢</div>
+                    <h3>Grandes Corporaciones</h3>
+                    <p>Soluciones a medida para empresas multinacionales que requieren una integración total de sus procesos de suministro.</p>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-icon">🚀</div>
+                    <h3>PYMES en Expansión</h3>
+                    <p>Impulsamos el crecimiento de pequeñas y medianas empresas con tarifas competitivas y asesoramiento logístico directo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="max-width: 1000px; margin: 0 auto 8rem; padding: 0 1.5rem;">
+            <div class="portal-container">
+                <div style="flex: 1; padding: 3rem;">
+                    <h2 style="font-family: 'Roboto Slab', serif; color: #ffffff; font-size: 1.8rem; margin-bottom: 1rem;">Portal del Cliente</h2>
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 2rem;">
+                        Accede a tu panel privado para gestionar pedidos masivos, descargar facturas, visualizar analíticas de envíos y gestionar tu inventario en tiempo real.
+                    </p>
+                    <ul class="portal-features">
+                        <li><span>✔</span> Gestión de pedidos multi-origen</li>
+                        <li><span>✔</span> Informes de rendimiento mensuales</li>
+                        <li><span>✔</span> Soporte prioritario 24/7</li>
+                    </ul>
+                    <a href="login.html" class="portal-btn">Entrar al Panel</a>
+                </div>
+                <div class="portal-visual">
+                    <div class="mockup-ui">
+                        <div class="mock-line" style="width: 70%;"></div>
+                        <div class="mock-line" style="width: 40%;"></div>
+                        <div class="mock-bar-container">
+                            <div class="mock-bar" style="height: 60%;"></div>
+                            <div class="mock-bar" style="height: 90%;"></div>
+                            <div class="mock-bar" style="height: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="text-align: center; padding: 4rem 1.5rem; border-top: 1px solid #f1f5f9;">
+            <h2 style="font-family: 'Roboto Slab', serif; color: #003366; font-size: 1.5rem; margin-bottom: 1rem;">¿Quieres formar parte de nuestra red?</h2>
+            <p style="color: #64748b; margin-bottom: 2rem;">Descubre cómo podemos mejorar tus márgenes operativos hoy mismo.</p>
+            <a href="contact.html" style="color: #0066cc; font-weight: bold; text-decoration: none; border-bottom: 2px solid #0066cc; padding-bottom: 3px;">Solicitar información comercial</a>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <style>
+        /* Sectores Grid */
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+        }
+        .sector-card {
+            padding: 2.5rem 2rem;
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .sector-card:hover {
+            border-color: #0066cc;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+        }
+        .sector-icon { font-size: 2.5rem; margin-bottom: 1.2rem; display: block; }
+        .sector-card h3 { 
+            font-family: 'Roboto Slab', serif; 
+            color: #003366; 
+            font-size: 1.2rem; 
+            margin-bottom: 0.8rem; 
+        }
+        .sector-card p { font-size: 0.9rem; color: #64748b; line-height: 1.6; margin: 0; }
+
+        /* Portal Estilo Dashboard */
+        .portal-container {
+            display: flex;
+            background: #003366;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 51, 102, 0.25);
+            align-items: center;
+        }
+        .portal-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2.5rem;
+            color: white;
+            font-size: 0.9rem;
+        }
+        .portal-features li { margin-bottom: 0.6rem; display: flex; align-items: center; gap: 10px; }
+        .portal-features span { color: #00ccff; font-weight: bold; }
+        
+        .portal-btn {
+            display: inline-block;
+            background: #ffffff;
+            color: #003366;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .portal-btn:hover { background: #00ccff; color: #003366; }
+
+        .portal-visual {
+            flex: 1;
+            background: #002a55;
+            height: 100%;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        /* Simulación de UI */
+        .mockup-ui {
+            width: 250px;
+            height: 200px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .mock-line { height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; margin-bottom: 15px; }
+        .mock-bar-container { display: flex; align-items: flex-end; gap: 10px; height: 80px; margin-top: 30px; }
+        .mock-bar { flex: 1; background: #0066cc; border-radius: 4px 4px 0 0; }
+
+        @media (max-width: 850px) {
+            .portal-container { flex-direction: column; }
+            .portal-visual { min-height: 250px; width: 100%; }
+        }
+    </style>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

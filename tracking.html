@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUES - Seguimiento de Envíos</title>
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #ffffff;">
+
+    <header>
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="RUES Logo" class="logo">
+        </div>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="tracking.html" class="active">Seguimiento</a></li>
+                <li><a href="clients.html">Clientes</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section style="padding: 4rem 1.5rem; background: #001a33; text-align: center; color: white;">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h1 style="font-family: 'Roboto Slab', serif; font-size: 1.8rem; margin-bottom: 1.5rem; letter-spacing: 0.5px; opacity: 0.95;">Estado de tu envío</h1>
+                
+                <div class="search-wrap">
+                    <form id="tracking-form">
+                        <input type="text" id="tracking-number" placeholder="Ej: RUES-12345678X" required>
+                        <button type="submit">Localizar</button>
+                    </form>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.8rem; color: #94a3b8; opacity: 0.7;">
+                    Introduce el código recibido por email para actualizar la ubicación.
+                </p>
+            </div>
+        </section>
+
+        <section id="result-section" style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem; display: none;">
+            <div style="margin-top: -1.5rem; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 15px 30px rgba(0,0,0,0.08); border: 1px solid #eef2f6;">
+                <div id="tracking-result">
+                    </div>
+            </div>
+        </section>
+
+        <section style="max-width: 700px; margin: 5rem auto 2rem; padding: 0 1.5rem;">
+            <div style="text-align: center; margin-bottom: 2.5rem;">
+                <h2 style="font-family: 'Roboto Slab', serif; color: #003366; font-size: 1.5rem;">Preguntas frecuentes</h2>
+            </div>
+
+            <div class="faq-accordion">
+                <details class="faq-item">
+                    <summary>¿Cuándo se actualiza el estado del envío?</summary>
+                    <div class="faq-content">
+                        <p>La información se actualiza automáticamente cada vez que el paquete es escaneado en uno de nuestros centros logísticos o puntos de control.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Mi número de seguimiento no funciona</summary>
+                    <div class="faq-content">
+                        <p>Asegúrate de copiar el código exacto sin espacios. Ten en cuenta que los datos pueden tardar hasta 12 horas en aparecer tras la recogida inicial.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Puedo modificar la dirección de entrega?</summary>
+                    <div class="faq-content">
+                        <p>Sí, puedes solicitar un cambio de dirección siempre que el envío no haya alcanzado el estado de "En reparto local".</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Qué sucede si no estoy en mi domicilio?</summary>
+                    <div class="faq-content">
+                        <p>Realizaremos un segundo intento de entrega. También tienes la opción de solicitar la recogida en el punto RUES más cercano a tu ubicación.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Se realizan entregas en fin de semana?</summary>
+                    <div class="faq-content">
+                        <p>Disponemos de servicios de entrega en sábado para mercancía urgente y servicios e-commerce seleccionados en capitales de provincia.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Cómo contacto con el soporte logístico?</summary>
+                    <div class="faq-content">
+                        <p>Puedes gestionar cualquier incidencia a través de nuestro formulario de contacto o llamando a nuestra central de atención al cliente.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section style="max-width: 700px; margin: 0 auto 6rem; padding: 0 1.5rem;">
+            <div style="padding-top: 2rem; border-top: 1px solid #f1f5f9; text-align: center;">
+                <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 1.5rem;">¿No encuentras lo que buscas?</p>
+                <a href="contact.html" style="color: #0066cc; text-decoration: none; font-weight: 500; font-size: 0.85rem; border: 1px solid #0066cc; padding: 0.5rem 1.2rem; border-radius: 4px; transition: 0.3s; display: inline-block;">
+                    Contactar con soporte
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <style>
+        /* UI del Buscador */
+        .search-wrap {
+            max-width: 500px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 5px;
+            border-radius: 8px;
+        }
+        #tracking-form {
+            display: flex;
+            background: white;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        #tracking-number {
+            flex: 1;
+            border: none;
+            padding: 1rem 1.2rem;
+            font-size: 0.95rem;
+            outline: none;
+            color: #1e293b;
+        }
+        #tracking-form button {
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 0 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        #tracking-form button:hover { background: #004499; }
+
+        /* Estilo Acordeón FAQ */
+        .faq-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .faq-item {
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            border-radius: 6px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        .faq-item[open] {
+            border-color: #0066cc;
+            box-shadow: 0 5px 15px rgba(0,102,204,0.05);
+        }
+        summary {
+            padding: 1.2rem;
+            font-weight: 500;
+            color: #003366;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95rem;
+            transition: 0.3s;
+        }
+        summary::after {
+            content: '+';
+            font-size: 1.2rem;
+            color: #0066cc;
+            transition: 0.3s;
+        }
+        .faq-item[open] summary::after {
+            content: '−';
+            transform: rotate(180deg);
+        }
+        summary:hover {
+            background: #f8fbff;
+        }
+        .faq-content {
+            padding: 0 1.2rem 1.2rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Soporte */
+        a[href="contact.html"]:hover {
+            background: #0066cc;
+            color: white !important;
+        }
+    </style>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

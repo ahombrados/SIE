@@ -1,0 +1,39 @@
+/* ========================================= */
+/* RESPONSIVE CSS (Solo para pantallas pequeñas) */
+/* ========================================= */
+
+/* Todo lo que esté aquí dentro solo se aplicará en móviles o tablets (menos de 768px) */
+@media (max-width: 768px) {
+    
+    /* Reducimos el espacio del header en móviles para aprovechar la pantalla */
+    header { 
+        padding: 0.5rem 1rem; 
+    }
+
+    /* Logo más compacto en móviles */
+    header .logo {
+        max-width: 100px; 
+        margin: 0.3rem auto; 
+    }
+
+    /* Navegación en columna para que los botones no se amontonen */
+    nav ul { 
+        flex-direction: column; 
+        gap: 0.8rem;
+    }
+
+    nav a { 
+        padding: 0.3rem 0.5rem; 
+    }
+
+    /* Hero y secciones más compactas */
+    .hero { 
+        padding: 2rem 1rem; 
+    }
+
+    .feature { 
+        max-width: 90%; 
+        margin: 1rem auto; 
+        padding: 1rem; 
+    }
+}
